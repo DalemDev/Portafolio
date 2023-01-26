@@ -1,0 +1,37 @@
+.habilidad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+  background-color: white;
+}
+
+.habilidad img{
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 0 0 5px 5px;
+  animation: flotar 3s linear infinite;
+}
+
+@media screen and (max-width: 500px){
+  .habilidad img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .habilidad:hover{
+    transform: none;
+  }
+}
+
+@keyframes flotar {
+  0%,
+  100%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-23px);
+  }
+}

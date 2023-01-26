@@ -1,38 +1,235 @@
-.App {
-  text-align: center;
+:root {
+  --color-fondo: rgb(255,255,255);
+  --color-texto: #000000;
+  --color-fondo-boton: #082032;
+  --color-hover-boton: #0e273aeb;
+  --color-boton: rgba(241, 240, 240, 0.966);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: var(--color-fondo);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contenedor {
+  max-width: 990px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sobre-mi{
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--color-texto);
+}
+
+.sobre-mi__info{
+  width: 40rem;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.sobre-mi__info p{
+  word-wrap: break-word;
+  line-height: 29px;
+}
+
+.sobre-mi__contenedor-imagen{  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-position: center;
+  background-size: contain;
+}
+
+.sobre-mi__imagen{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sobre-mi__button {
+  --width: 150px;
+  --height: 40px; 
+  width: var(--width);
+  height: var(--height);
+  background: var(--color-fondo-boton);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  transition: background 0.3s ease;
+ }
+ 
+ .sobre-mi__text {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ }
+ 
+ .sobre-mi__button-wrapper,.sobre-mi__text,.sobre-mi__icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: var(--color-boton);
+ }
+ 
+ .sobre-mi__text {
+  top: 0
+ }
+ 
+ .sobre-mi__text,.sobre-mi__icon {
+  transition: top 0.5s;
+ }
+ 
+ .sobre-mi__icon {
+  color: var(--color-boton);
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .sobre-mi__download{
+  font-size: 30px;
+ }
+ 
+ .sobre-mi__button:hover {
+  background: var(--color-hover-boton);
+ }
+ 
+ .sobre-mi__button:hover .sobre-mi__text {
+  top: -100%;
+ }
+ 
+ .sobre-mi__button:hover .sobre-mi__icon {
+  top: 0;
+ }
+
+.contenedor-habilidades{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--color-texto);
 }
 
-.App-link {
-  color: #61dafb;
+.habilidades{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contenedor-proyectos{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 100px;
+  color: var(--color-texto);
+}
+.proyectos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contenedor-contactos{
+  width: 100%;
+  height: calc(100vh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  color: var(--color-texto);
+}
+
+.contactos{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.contacto{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.contacto:hover{
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 900px){
+  .sobre-mi{
+    margin-top: 0;
+    flex-direction: column-reverse;
   }
-  to {
-    transform: rotate(360deg);
+  .sobre-mi__info{
+    width: 100%;
+    align-items: center;
+  }
+  .sobre-mi__info p{
+    padding: 0 17px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .sobre-mi{
+    justify-content: center;
+    gap: 40px;
+  }
+  .sobre-mi__button-wrapper{
+    overflow: auto;
+    position: inherit;
+    width: auto;
+    left: auto;
+    text-decoration: none;
+  }
+  .sobre-mi__button{
+    position: inherit;
+  }
+  .sobre-mi__text{
+    overflow: auto;
+    position: inherit;
+  }
+  .sobre-mi__icon{
+    display: none;
+  }
+  .sobre-mi__button:hover{
+    background: var(--color-fondo-boton);
+  }
+  .animated{
+    animation-name: none;
+  }
+  .contacto:hover{
+    transform: none;
+  }
+  .contenedor-contactos{
+    gap: 100px;
   }
 }

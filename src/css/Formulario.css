@@ -1,0 +1,81 @@
+:root {
+  --color-texto-input-formulario: #000;
+  --color-fuera-input-formulario: rgba(8, 7, 7, 0.951);
+  --color-fondo-submit-formulario: #082032;
+  --color-submit-formulario: #fff; 
+  --color-hover-submit-formulario:  rgba(55,25,222,0.8);
+  --fondo-input-formulario: transparent;
+}
+
+.form{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.form__group{
+  width: 100%;
+  position: relative;
+}
+
+.form__input{
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--color-texto-input-formulario);
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color-texto-input-formulario);
+  background-color: var(--fondo-input-formulario);
+}
+
+textarea{
+  resize: none;
+}
+
+.form__label{
+  color: var(--color-fuera-input-formulario);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform .5s, color .3s;
+}
+
+.form__cta{
+  width: 100%;
+  font-size: 1rem;
+  background-color: var(--color-fondo-submit-formulario);
+  color: var(--color-submit-formulario);
+  border: none;
+  font-weight: 400;
+  border-radius: .2em;
+  padding: .7em 0;
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+.form__cta:hover{
+  background-color: var(--color-hover-submit-formulario);
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label{
+  transform: translateY(-12px) scale(.7);
+  transform-origin: top left;
+}
+
+@media screen and (max-width: 500px){
+  .form{
+    width: 90%;
+    max-width: 400px;
+  }
+  .form__cta:hover{
+    background-color: var(--color-fondo-submit-formulario);
+  }
+}

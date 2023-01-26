@@ -1,0 +1,103 @@
+:root{
+ --color-shadow-proyecto: rgba(6, 6, 6, 0.4);
+ --color-boton-proyecto: rgba(241, 240, 240, 0.966);
+ --fondo-boton-proyecto: #082032;
+ --color-shadow:rgba(241,240,240,0.966);
+ --fondo-boton-before: rgba(55,25,222,0.4);
+ --color-hover: rgba(241,240,240,0.966);
+}
+
+.proyecto,
+.contenedor-imagen,
+.contenedor-info,
+.contenedor-imagen img {
+  width: 100%;
+}
+
+.proyecto {
+  max-width:400px;
+  border-radius: 5px;
+  box-shadow: var(--color-shadow-proyecto) 0px 2px 4px,
+      var(--color-shadow-proyecto) 0px 7px 13px -3px, var(--color-shadow-proyecto) 0px -3px 0px inset;
+  background: transparent;
+}
+
+.contenedor-imagen img {
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+  height: 200px;
+}
+
+.contenedor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 10px 20px 10px;
+}
+
+.contenedor-info p{
+  line-height: 25px;
+}
+
+.contenedor-acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contenedor-acciones a {
+  padding: 15px 20px;
+  border-radius: 20px;
+  color: var(--color-boton-proyecto);
+  z-index: 1;
+  background: var(--fondo-boton-proyecto);
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  box-shadow: 0px 0px 4px -1px var(--color-shadow);
+  transition: all 250ms;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+  font-weight: 300;
+}
+
+.contenedor-acciones a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: var(--fondo-boton-before);
+  z-index: -1;
+  box-shadow: 4px 8px 19px -3px var(--color-shadow);
+  transition: all 250ms
+}
+
+.contenedor-acciones a:hover{
+  color: var(--color-hover);
+}
+
+.contenedor-acciones a:hover::before {
+  width: 100%;
+ }
+
+@media screen and (max-width: 850px){
+  .proyecto{
+    width: calc(100vw - 70px);
+  }
+  .contenedor-acciones{
+    flex-direction: column;
+  }
+  .contenedor-acciones a::before{
+    content: none;
+  }
+  .contenedor-acciones a:hover{
+    color: #000;
+  }
+}

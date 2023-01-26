@@ -1,0 +1,34 @@
+:root{
+  --fondo-arriba: #000;
+  --color-arriba: rgba(255,255,255,0.99);
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background: var(--fondo-arriba);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-arriba);
+  border-radius: 50%;
+  font-size: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  z-index: 1;
+  transition: all 300ms ease;
+}
+
+button:hover{
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 500px){
+  button{
+    right: 15px;
+  }
+}
