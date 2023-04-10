@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portafolio/static/css/main.facbce74.css",
-    "main.js": "/Portafolio/static/js/main.fa9101b0.js",
+    "main.js": "/Portafolio/static/js/main.b012b9ca.js",
     "static/media/vintageApp.PNG": "/Portafolio/static/media/vintageApp.62ef3ce5c009575dfa95.PNG",
     "static/media/marvelApp.PNG": "/Portafolio/static/media/marvelApp.080cf99ab8b8fc481117.PNG",
     "static/media/ecommerce.PNG": "/Portafolio/static/media/ecommerce.5822ec46e078db0eca97.PNG",
@@ -41,10 +41,10 @@
     "static/media/css.svg": "/Portafolio/static/media/css.5fcd7f5683afc0fc6d0186a083262016.svg",
     "static/media/html.svg": "/Portafolio/static/media/html.ca0db580ffd74f086f2dc2a71dacd660.svg",
     "main.facbce74.css.map": "/Portafolio/static/css/main.facbce74.css.map",
-    "main.fa9101b0.js.map": "/Portafolio/static/js/main.fa9101b0.js.map"
+    "main.b012b9ca.js.map": "/Portafolio/static/js/main.b012b9ca.js.map"
   },
   "entrypoints": [
     "static/css/main.facbce74.css",
-    "static/js/main.fa9101b0.js"
+    "static/js/main.b012b9ca.js"
   ]
 }
