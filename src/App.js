@@ -126,7 +126,7 @@ function App() {
             imagen={PROYECTO2}
             titulo='Vintage to-do'
             descripcion='Este proyecto lo realice para practicar conexion a firebase, usando el authentication y firestore que forman parte de las herramientas de firebase.'
-            demo='https://vintage-to-do.netlify.app/login'
+            demo='https://vintage-to-do.netlify.app/'
             github='https://github.com/DalemDev/vintage-to-do'
           /> 
           
