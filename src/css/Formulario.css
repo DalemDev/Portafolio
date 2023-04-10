@@ -1,9 +1,9 @@
 :root {
   --color-texto-input-formulario: #000;
   --color-fuera-input-formulario: rgba(8, 7, 7, 0.951);
-  --color-fondo-submit-formulario: #082032;
+  --color-fondo-submit-formulario: #25273a;
   --color-submit-formulario: #fff; 
-  --color-hover-submit-formulario:  #274156;
+  --color-hover-submit-formulario:  #1B1F3B;
   --fondo-input-formulario: transparent;
 }
 
@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 35px;
+  gap: 25px;
 }
 
 .form__group{
@@ -47,6 +47,27 @@ textarea{
   transition: transform .5s, color .3s;
 }
 
+.imagen-form{
+  display: flex;
+  gap: 70px;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.form-imagen{
+  width: 200px;
+  height: 220px;
+  border-radius: 5%;
+}
+
+.form-data{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 60%;
+}
+
 .form__cta{
   width: 100%;
   font-size: 1rem;
@@ -58,6 +79,7 @@ textarea{
   padding: .7em 0;
   cursor: pointer;
   transition: background-color 1s ease;
+  margin: 20px 0;
 }
 
 .form__cta:hover{
@@ -78,5 +100,24 @@ textarea{
   }
   .form__cta:hover{
     background-color: var(--color-fondo-submit-formulario);
+  }
+  .imagen-form{
+    display: flex;
+    gap: 70px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form-imagen{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .form-data{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
   }
 }

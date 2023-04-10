@@ -5,7 +5,8 @@ import Proyecto from "./components/Proyecto";
 import IrArriba from './components/IrArriba';
 import Formulario from './components/Formulario';
 import { AiOutlineDownload } from 'react-icons/ai';
-import { HTML, CSS, JS, REACT, NODEJS, FIREBASE, GIT, MONGODB, LARAVEL, MYSQL, POSTMAN, VITE, VSCODE, TWITTER, LINKEDIN, PROYECTO1, PROYECTO2, PROYECTO3, PROYECTO4, PROYECTO5, PROYECTO6, PROYECTO7, PROYECTO8, PROYECTO9, PROYECTO10, PROYECTO11, PROYECTO12, PROYECTO13, PROYECTO14, PROYECTO15, PROYECTO16, PROYECTO17, PROYECTO18, PROYECTO19, YO, CV } from './components/Archivos';
+import { HTML, CSS, JS, REACT, NODEJS, FIREBASE, GIT, MONGODB, LARAVEL, MYSQL, POSTMAN, VITE, VSCODE, TWITTER, LINKEDIN, PROYECTO1, PROYECTO2, PROYECTO3, PROYECTO4, PROYECTO5, PROYECTO6, PROYECTO7, PROYECTO8, PROYECTO9, PROYECTO10, PROYECTO11, PROYECTO12, PROYECTO13, PROYECTO14, PROYECTO15, PROYECTO16, PROYECTO17, PROYECTO18, PROYECTO19, CV } from './components/Archivos';
+import ME from './assets/images/me4.jpeg'
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
         <div className="sobre-mi__contenedor-imagen">
           <img
             className="sobre-mi__imagen"
-            src={YO}
+            src={ME}
             alt="Yo"
             loading="lazy"
           />

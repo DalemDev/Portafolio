@@ -34,7 +34,7 @@ function NavBar() {
       rootElem.style.setProperty("--fondo-links", "#ffff");
       rootElem.style.setProperty("--color-links", "#000");
       rootElem.style.setProperty("--color-links-desk", "#ffff");
-      rootElem.style.setProperty("--color-fondo-nav", "#274156");
+      rootElem.style.setProperty("--color-fondo-nav", "#1B1F3B");
 
       //habilidad
       rootElem.style.setProperty(
@@ -48,8 +48,8 @@ function NavBar() {
       //formulario
       rootElem.style.setProperty("--color-texto-input-formulario","#fff");
       rootElem.style.setProperty("--color-fuera-input-formulario","rgba(255,255,255,0.7)");
-      rootElem.style.setProperty("--color-submit-formulario","#000"); 
-      rootElem.style.setProperty("--color-fondo-submit-formulario","rgba(255,255,255)");   
+      rootElem.style.setProperty("--color-submit-formulario","#fff"); 
+      rootElem.style.setProperty("--color-fondo-submit-formulario","#25273a");   
         
       //ir arriba
       rootElem.style.setProperty("--fondo-arriba","rgba(255,255,255,0.99)");  
@@ -67,8 +67,8 @@ function NavBar() {
       rootElem.style.setProperty("--color-close", "#000");
       rootElem.style.setProperty("--fondo-links", "#000");
       rootElem.style.setProperty("--color-links", "#fff");
-      rootElem.style.setProperty("--color-links-desk", "#000");
-      rootElem.style.setProperty("--color-fondo-nav", "#1C6E8C");
+      rootElem.style.setProperty("--color-links-desk", "#fff");
+      rootElem.style.setProperty("--color-fondo-nav", "#1B1F3B");
 
 
       //habilidad
@@ -84,7 +84,7 @@ function NavBar() {
       rootElem.style.setProperty("--color-texto-input-formulario","#000");
       rootElem.style.setProperty("--color-fuera-input-formulario","rgba(8, 7, 7, 0.951)");
       rootElem.style.setProperty("--color-submit-formulario","#fff");  
-      rootElem.style.setProperty("--color-fondo-submit-formulario","#082032");    
+      rootElem.style.setProperty("--color-fondo-submit-formulario","#25273a");    
       
       //ir arriba
       rootElem.style.setProperty("--fondo-arriba","#000");  
