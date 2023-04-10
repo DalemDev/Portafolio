@@ -8,9 +8,9 @@
 
   --fondo-links: #000;
   --color-links: #ffff;
-  --color-links-desk: #000; 
+  --color-links-desk: #FBFCFF; 
 
-  --color-shadow-nav: rgba(6, 6, 6, 0.4);
+  --color-fondo-nav: #1C6E8C;
 }
 
 .container{
@@ -118,7 +118,7 @@
   display: inline-block;
   width: 3.5em;
   height: 2em;
-  top: 35px;
+  top: 29px;
   left: 24px;
 }
 
@@ -169,10 +169,7 @@
     padding: 25px 20px 25px 20px;
     position: sticky;
     top: 0;
-    background: rgba(247, 245, 245, .8);
-    box-shadow: 0 3px 10px 0 var(--color-shadow-nav);
-    backdrop-filter: blur( 8px );
-    -webkit-backdrop-filter: blur( 5.5px );
+    background: var(--color-fondo-nav);
     border-radius: 0 0 10px 10px;
     z-index: 10;
   }

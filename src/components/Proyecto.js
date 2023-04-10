@@ -13,7 +13,7 @@ function Proyecto({ imagen, titulo, descripcion, demo, github }) {
         <h3>{titulo}</h3>
         <p>{descripcion}</p>
         <div className="contenedor-acciones">
-          <a href={demo} target="_blank" rel="noopener noreferrer">
+          <a href={demo==='no hay' ? "#!" : demo} target={demo==='no hay' ? "" : "_blank"} rel="noopener noreferrer">
             Ver Demo <AiFillEye />
           </a>
           <a href={github} target="_blank" rel="noopener noreferrer">

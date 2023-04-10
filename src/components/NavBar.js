@@ -2,8 +2,7 @@
 import "../css/NavBar.css";
 import { FaAlignRight } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
-import TWITTER from "../assets/images/twitter.svg";
-import LINKEDIN from "../assets/images/linkedin.svg";
+import {TWITTER, LINKEDIN} from './Archivos';
 
 function NavBar() {
   function menu() {
@@ -35,10 +34,7 @@ function NavBar() {
       rootElem.style.setProperty("--fondo-links", "#ffff");
       rootElem.style.setProperty("--color-links", "#000");
       rootElem.style.setProperty("--color-links-desk", "#ffff");
-      rootElem.style.setProperty(
-        "--color-shadow-nav",
-        "rgba(255, 255, 255, 0.7)"
-      );
+      rootElem.style.setProperty("--color-fondo-nav", "#274156");
 
       //habilidad
       rootElem.style.setProperty(
@@ -53,8 +49,8 @@ function NavBar() {
       rootElem.style.setProperty("--color-texto-input-formulario","#fff");
       rootElem.style.setProperty("--color-fuera-input-formulario","rgba(255,255,255,0.7)");
       rootElem.style.setProperty("--color-submit-formulario","#000"); 
-      rootElem.style.setProperty("--color-fondo-submit-formulario","rgba(255,255,255,0.9)");   
-      
+      rootElem.style.setProperty("--color-fondo-submit-formulario","rgba(255,255,255)");   
+        
       //ir arriba
       rootElem.style.setProperty("--fondo-arriba","rgba(255,255,255,0.99)");  
       rootElem.style.setProperty("--color-arriba","#000");
@@ -72,10 +68,8 @@ function NavBar() {
       rootElem.style.setProperty("--fondo-links", "#000");
       rootElem.style.setProperty("--color-links", "#fff");
       rootElem.style.setProperty("--color-links-desk", "#000");
-      rootElem.style.setProperty(
-        "--color-shadow-nav",
-        "rgba(6, 6, 6, 0.4)"
-      );
+      rootElem.style.setProperty("--color-fondo-nav", "#1C6E8C");
+
 
       //habilidad
       rootElem.style.setProperty(

@@ -3,7 +3,7 @@
   --color-fuera-input-formulario: rgba(8, 7, 7, 0.951);
   --color-fondo-submit-formulario: #082032;
   --color-submit-formulario: #fff; 
-  --color-hover-submit-formulario:  rgba(55,25,222,0.8);
+  --color-hover-submit-formulario:  #274156;
   --fondo-input-formulario: transparent;
 }
 
@@ -62,6 +62,7 @@ textarea{
 
 .form__cta:hover{
   background-color: var(--color-hover-submit-formulario);
+  color: var(--color-submit-formulario);
 }
 
 .form__input:focus + .form__label,
