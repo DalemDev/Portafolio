@@ -1,13 +1,13 @@
 :root {
   --color-texto-input-formulario: #000;
   --color-fuera-input-formulario: rgba(8, 7, 7, 0.951);
-  --color-fondo-submit-formulario: #25273a;
-  --color-submit-formulario: #fff; 
-  --color-hover-submit-formulario:  #1B1F3B;
+  --color-fondo-submit-formulario: #19376d;
+  --color-submit-formulario: #fff;
+  --color-hover-submit-formulario: #123d8bf6;
   --fondo-input-formulario: transparent;
 }
 
-.form{
+.form {
   width: 80%;
   display: flex;
   justify-content: center;
@@ -16,38 +16,38 @@
   gap: 25px;
 }
 
-.form__group{
+.form__group {
   width: 100%;
   position: relative;
 }
 
-.form__input{
+.form__input {
   width: 100%;
   font-family: inherit;
   font-size: 1rem;
   color: var(--color-texto-input-formulario);
-  padding: .6em .3em;
+  padding: 0.6em 0.3em;
   border: none;
   outline: none;
   border-bottom: 1px solid var(--color-texto-input-formulario);
   background-color: var(--fondo-input-formulario);
 }
 
-textarea{
+textarea {
   resize: none;
 }
 
-.form__label{
+.form__label {
   color: var(--color-fuera-input-formulario);
   cursor: pointer;
   position: absolute;
   top: 0;
   left: 5px;
   transform: translateY(10px);
-  transition: transform .5s, color .3s;
+  transition: transform 0.5s, color 0.3s;
 }
 
-.imagen-form{
+.imagen-form {
   display: flex;
   gap: 70px;
   width: 100%;
@@ -55,66 +55,66 @@ textarea{
   flex-direction: row;
 }
 
-.form-imagen{
+.form-imagen {
   width: 200px;
   height: 220px;
   border-radius: 5%;
 }
 
-.form-data{
+.form-data {
   display: flex;
   flex-direction: column;
   gap: 50px;
   width: 60%;
 }
 
-.form__cta{
+.form__cta {
   width: 100%;
   font-size: 1rem;
   background-color: var(--color-fondo-submit-formulario);
   color: var(--color-submit-formulario);
   border: none;
   font-weight: 400;
-  border-radius: .2em;
-  padding: .7em 0;
+  border-radius: 0.2em;
+  padding: 0.7em 0;
   cursor: pointer;
   transition: background-color 1s ease;
   margin: 20px 0;
 }
 
-.form__cta:hover{
+.form__cta:hover {
   background-color: var(--color-hover-submit-formulario);
   color: var(--color-submit-formulario);
 }
 
 .form__input:focus + .form__label,
-.form__input:not(:placeholder-shown) + .form__label{
-  transform: translateY(-12px) scale(.7);
+.form__input:not(:placeholder-shown) + .form__label {
+  transform: translateY(-12px) scale(0.7);
   transform-origin: top left;
 }
 
-@media screen and (max-width: 500px){
-  .form{
+@media screen and (max-width: 500px) {
+  .form {
     width: 90%;
     max-width: 400px;
   }
-  .form__cta:hover{
+  .form__cta:hover {
     background-color: var(--color-fondo-submit-formulario);
   }
-  .imagen-form{
+  .imagen-form {
     display: flex;
     gap: 70px;
     width: 100%;
     justify-content: center;
     flex-direction: column;
   }
-  .form-imagen{
+  .form-imagen {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: 0 auto;
   }
-  .form-data{
+  .form-data {
     display: flex;
     flex-direction: column;
     gap: 50px;

@@ -1,12 +1,12 @@
 :root {
-  --color-fondo: #EAF6FF;
+  --color-fondo: rgb(247, 245, 245);
   --color-texto: #232528;
-  --color-fondo-boton: #2A2A72;
-  --color-hover-boton: rgba(14, 21, 58, 0.922);
-  --color-boton: rgba(241, 240, 240, 0.966);
+  --color-fondo-boton: #19376d;
+  --color-hover-boton: #123d8bf6;
+  --color-boton: rgb(247, 245, 245);
 }
 
-body{
+body {
   background-color: var(--color-fondo);
 }
 
@@ -15,7 +15,7 @@ body{
   margin: 0 auto;
 }
 
-.sobre-mi{
+.sobre-mi {
   width: 100%;
   height: calc(100vh - 60px);
   display: flex;
@@ -24,19 +24,19 @@ body{
   color: var(--color-texto);
 }
 
-.sobre-mi__info{
+.sobre-mi__info {
   width: 40rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.sobre-mi__info p{
+.sobre-mi__info p {
   word-wrap: break-word;
   line-height: 29px;
 }
 
-.sobre-mi__contenedor-imagen{  
+.sobre-mi__contenedor-imagen {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -44,7 +44,7 @@ body{
   background-size: contain;
 }
 
-.sobre-mi__imagen{
+.sobre-mi__imagen {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -54,7 +54,7 @@ body{
 
 .sobre-mi__button {
   --width: 150px;
-  --height: 40px; 
+  --height: 40px;
   width: var(--width);
   height: var(--height);
   background: var(--color-fondo-boton);
@@ -62,56 +62,59 @@ body{
   text-align: center;
   border-radius: 0.45em;
   transition: background 0.3s ease;
- }
- 
- .sobre-mi__text {
+}
+
+.sobre-mi__text {
   display: flex;
   align-items: center;
   justify-content: center;
- }
- 
- .sobre-mi__button-wrapper,.sobre-mi__text,.sobre-mi__icon {
+}
+
+.sobre-mi__button-wrapper,
+.sobre-mi__text,
+.sobre-mi__icon {
   overflow: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   color: var(--color-boton);
- }
- 
- .sobre-mi__text {
-  top: 0
- }
- 
- .sobre-mi__text,.sobre-mi__icon {
+}
+
+.sobre-mi__text {
+  top: 0;
+}
+
+.sobre-mi__text,
+.sobre-mi__icon {
   transition: top 0.5s;
- }
- 
- .sobre-mi__icon {
+}
+
+.sobre-mi__icon {
   color: var(--color-boton);
   top: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
- }
+}
 
- .sobre-mi__download{
+.sobre-mi__download {
   font-size: 30px;
- }
- 
- .sobre-mi__button:hover {
-  background: var(--color-hover-boton);
- }
- 
- .sobre-mi__button:hover .sobre-mi__text {
-  top: -100%;
- }
- 
- .sobre-mi__button:hover .sobre-mi__icon {
-  top: 0;
- }
+}
 
-.contenedor-habilidades{
+.sobre-mi__button:hover {
+  background: var(--color-hover-boton);
+}
+
+.sobre-mi__button:hover .sobre-mi__text {
+  top: -100%;
+}
+
+.sobre-mi__button:hover .sobre-mi__icon {
+  top: 0;
+}
+
+.contenedor-habilidades {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -122,7 +125,7 @@ body{
   color: var(--color-texto);
 }
 
-.habilidades{
+.habilidades {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -132,7 +135,7 @@ body{
   padding: 20px 30px;
 }
 
-.contenedor-proyectos{
+.contenedor-proyectos {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -142,7 +145,7 @@ body{
   padding-top: 100px;
   color: var(--color-texto);
 }
-.proyectos{
+.proyectos {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -152,7 +155,7 @@ body{
   gap: 30px;
 }
 
-.contenedor-contactos{
+.contenedor-contactos {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -164,7 +167,7 @@ body{
   color: var(--color-texto);
 }
 
-.contactos{
+.contactos {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -173,64 +176,64 @@ body{
   gap: 50px;
 }
 
-.contacto{
+.contacto {
   width: 60px;
   height: 60px;
   object-fit: cover;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
-.contacto:hover{
+.contacto:hover {
   transform: translateY(-10px);
 }
 
-@media screen and (max-width: 900px){
-  .sobre-mi{
+@media screen and (max-width: 900px) {
+  .sobre-mi {
     margin-top: 0;
     flex-direction: column-reverse;
   }
-  .sobre-mi__info{
+  .sobre-mi__info {
     width: 100%;
     align-items: center;
   }
-  .sobre-mi__info p{
+  .sobre-mi__info p {
     padding: 0 17px;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 500px){
-  .sobre-mi{
+@media screen and (max-width: 500px) {
+  .sobre-mi {
     justify-content: center;
     gap: 40px;
   }
-  .sobre-mi__button-wrapper{
+  .sobre-mi__button-wrapper {
     overflow: auto;
     position: inherit;
     width: auto;
     left: auto;
     text-decoration: none;
   }
-  .sobre-mi__button{
+  .sobre-mi__button {
     position: inherit;
   }
-  .sobre-mi__text{
+  .sobre-mi__text {
     overflow: auto;
     position: inherit;
   }
-  .sobre-mi__icon{
+  .sobre-mi__icon {
     display: none;
   }
-  .sobre-mi__button:hover{
+  .sobre-mi__button:hover {
     background: var(--color-fondo-boton);
   }
-  .animated{
+  .animated {
     animation-name: none;
   }
-  .contacto:hover{
+  .contacto:hover {
     transform: none;
   }
-  .contenedor-contactos{
+  .contenedor-contactos {
     gap: 30px;
   }
 }
