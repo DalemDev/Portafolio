@@ -30,7 +30,7 @@ import PROYECTO17 from "../assets/images/chatapp.png";
 import PROYECTO18 from "../assets/images/crudlaravel.png";
 import PROYECTO19 from "../assets/images/crudphp.png";
 import CV from "../assets/doc/cv.pdf";
-import YO from "../assets/images/me4.jpeg";
+import YO from "../assets/images/me.jpeg";
 import ANIMACION from "../assets/images/animacion-laptop.gif";
 
 export {

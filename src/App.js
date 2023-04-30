@@ -88,19 +88,19 @@ function App() {
         {/* seccion Habilidades */}
         <div className="contenedor-habilidades" id="habilidades">
           <div className="habilidades" data-aos="fade-up">
-            <Habilidad logo={HTML}>HTML</Habilidad>
-            <Habilidad logo={CSS}>CSS</Habilidad>
-            <Habilidad logo={JS}>JAVASCRIPT</Habilidad>
-            <Habilidad logo={REACT}>REACT</Habilidad>
-            <Habilidad logo={LARAVEL}>LARAVEL</Habilidad>
-            <Habilidad logo={NODEJS}>NODEJS</Habilidad>
-            <Habilidad logo={MONGODB}>MONGODB</Habilidad>
+            <Habilidad logo={HTML}>Html</Habilidad>
+            <Habilidad logo={CSS}>Css</Habilidad>
+            <Habilidad logo={JS}>JavaScript</Habilidad>
+            <Habilidad logo={REACT}>React</Habilidad>
+            <Habilidad logo={LARAVEL}>Laravel</Habilidad>
+            <Habilidad logo={NODEJS}>NodeJS</Habilidad>
+            <Habilidad logo={MONGODB}>MongoDB</Habilidad>
             <Habilidad logo={FIREBASE}>Firebase</Habilidad>
-            <Habilidad logo={MYSQL}>MYSQL</Habilidad>
-            <Habilidad logo={POSTMAN}>POSTMAN</Habilidad>
-            <Habilidad logo={GIT}>GIT</Habilidad>
-            <Habilidad logo={VITE}>VITE</Habilidad>
-            <Habilidad logo={VSCODE}>VS CODE</Habilidad>
+            <Habilidad logo={MYSQL}>MySQL</Habilidad>
+            <Habilidad logo={POSTMAN}>Postman</Habilidad>
+            <Habilidad logo={GIT}>Git</Habilidad>
+            <Habilidad logo={VITE}>Vite</Habilidad>
+            <Habilidad logo={VSCODE}>Vs Code</Habilidad>
           </div>
         </div>
         {/* seccion  proyectos */}
