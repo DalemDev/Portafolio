@@ -67,7 +67,7 @@ function NavBar() {
     } else {
       //modo light
       const rootElem = document.querySelector(":root");
-      rootElem.style.setProperty("--color-fondo", "rgb(247, 245, 245)");
+      rootElem.style.setProperty("--color-fondo", "#fff");
       rootElem.style.setProperty("--color-texto", "#000000");
 
       //navbar
